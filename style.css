@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
+
+/* Global Setting */
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+h1,p {
+  font-family: 'Outfit', sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 22px;
+}
+
+p {
+  color: hsl(215, 51%, 70%);
+  font-size: 18px; 
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+/* Body Setting */
+/* Background */
+
+#background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+}
+
+/* Card */
+
+#card {
+  background-color: hsl(216, 50%, 16%);
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+/* Card Image */
+/* Setting image-box to relative and icon-view to absolute so icon-view can be easily centered within image-box */
+
+#image-box {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  padding-top: 100%;
+  background: url("https://i.imgur.com/6F5hPCK.jpg");
+  background-size: contain;
+}
+
+#icon-view {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+/* hover effect over image */
+#image-box:hover {
+  background: linear-gradient(hsl(178, 100%, 50%, 0.5),hsl(178, 100%, 50%, 0.5)), url("https://i.imgur.com/6F5hPCK.jpg");
+  background-size: contain;
+}
+#image-box:hover svg {
+    visibility: visible;
+}
+
+/* Card Content */
+
+#content {
+  border-bottom: 1px solid hsl(215, 32%, 27%);
+  padding: 0px;
+}
+
+#icon-section {
+  display: flex;
+  justify-content: space-between;
+}
+#icon-section p {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+}
+#price {
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  align-items: center;
+}
+
+/* Creator Section */
+
+#creator {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+#creator-photo {
+  width: 34px;
+}
+
+#creator p {
+  margin-left: 15px;
+}
