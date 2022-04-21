@@ -29,20 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![https://github.com/luenlun/frontendmentor-NFT-preview-card-component/blob/main/Solution%20Screenshot.png?raw=true](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/luenlun/frontendmentor-NFT-preview-card-component]
+- Live Site URL: [https://luenlun.github.io/frontendmentor-NFT-preview-card-component/]
 
 ## My process
 
@@ -51,17 +43,20 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+In this challenge, I learned:
+
+- Centering a svg element in a div box
+- overlaying color on an image
+- Creating a reposive square div box
+
+The most challenging part is the Card Image with a view-icon with color ovarlay when hovering. In the first try, I divided it into three component: a div box, an image and a svg icon, but then I found it difficult to correctly center the icon on the image.
+
+After studying different resources on the web, I simplified it: a div box with background-image and an svg icon. To easily center the svg icon on the image, I set the position of the div box to relative and the svg icon to absolute so the svg icon is positioned relative to its parent: the div box.
+
+The Card Image acted as the background image of the div box and so the div box needed to be responsive square to fit the image. 
 
 To see how you can add code snippets, see below:
 
